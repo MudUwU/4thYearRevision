@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamics 4 - Course Materials</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+    header {
+      background-color: #6f57a3;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+    h1 {
+      margin: 0;
+    }
+    .content {
+      max-width: 1400px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #1e1e1e;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+    }
+
+    /* Top general resources row */
+    .top-resources {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    /* Learning module grid */
+    .module-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      width: 100%;
+    }
+    .module-header {
+      grid-column: 1 / span 3;
+      text-align: center;
+      margin: 15px 0 5px;
+      color: #6f57a3;
+      font-weight: bold;
+    }
+    .column-header {
+      text-align: center;
+      padding: 10px;
+      background: #2a2a2a;
+      border-radius: 5px;
+      margin-bottom: 5px;
+    }
+    .item {
+      padding: 12px;
+      background: #6f57a3;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      border-left: 3px solid #6f57a3;
+      margin-bottom: 10px;
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+    }
+    .item:hover {
+      background: #383838;
+      transform: translateX(3px);
+    }
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      width: 100%;
+      display: block;
+    }
+    a:hover {
+      color: #6f57a3;
+      text-decoration: underline;
+    }
+
+    /* Additional notes section */
+    .additional-notes {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #333;
+    }
+    .additional-notes h2 {
+      color: #6f57a3;
+      margin-top: 0;
+    }
+    .notes-text {
+      background: #121212;
+      color: #e0e0e0;
+      padding: 20px;
+      border-radius: 6px;
+      border-left: 3px solid #6f57a3;
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 14px;
+      line-height: 1.5;
+      white-space: pre-wrap;   /* preserves line breaks and wraps long lines */
+      word-wrap: break-word;
+      overflow-x: auto;
+      margin: 0;
+    }
+
+    @media (max-width: 1200px) {
+      .top-resources {
+        grid-template-columns: 1fr 1fr;
+      }
+      .module-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .module-header {
+        grid-column: 1 / span 2;
+      }
+    }
+    @media (max-width: 768px) {
+      .top-resources {
+        grid-template-columns: 1fr;
+      }
+      .module-grid {
+        grid-template-columns: 1fr;
+      }
+      .module-header {
+        grid-column: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dynamics 4</h1>
+    <p>Weeeeeeeeeee</p>
+  </header>
+  <div class="content">
+
+    <!-- General course resources -->
+    <div class="top-resources">
+      <div class="item">
+        <a href="COURSE NOTES.PDF" target="_blank">Course Notes</a>
+      </div>
+      <div class="item">
+        <a href="ExerciseSheets.pdf" target="_blank">Exercise Sheets</a>
+      </div>
+      <div class="item">
+        <a href="ExerciseAnswers.pdf" target="_blank">Exercise Answers</a>
+      </div>
+      <div class="item">
+        <a href="FormulaSheet.pdf" target="_blank">Formula Sheet</a>
+      </div>
+    </div>
+
+    <!-- Learning modules grid -->
+    <div class="module-grid">
+      <!-- Column Headers -->
+      <div class="column-header">Course Guide</div>
+      <div class="column-header">Lecture Slides</div>
+      <div class="column-header">Lecture Notes</div>
+
+      <!-- LM1 -->
+      <div class="module-header">Learning Module 1</div>
+      <div class="item">
+        <a href="LM1 Guide.pdf" target="_blank">LM1 Course Guide</a>
+      </div>
+      <div class="item">
+        <a href="LM1 Slides.pdf" target="_blank">LM1 Lecture Slides</a>
+      </div>
+      <div class="item">
+        <a href="LM1 LectureNotes.pdf" target="_blank">LM1 Lecture Notes</a>
+      </div>
+
+      <!-- LM2 -->
+      <div class="module-header">Learning Module 2</div>
+      <div class="item">
+        <a href="LM2 Guide.pdf" target="_blank">LM2 Course Guide</a>
+      </div>
+      <div class="item">
+        <a href="LM2 Slides.pdf" target="_blank">LM2 Lecture Slides</a>
+      </div>
+      <div class="item">
+        <a href="LM2 LectureNotes.pdf" target="_blank">LM2 Lecture Notes</a>
+      </div>
+
+      <!-- LM3 -->
+      <div class="module-header">Learning Module 3</div>
+      <div class="item">
+        <a href="LM3 Guide.pdf" target="_blank">LM3 Course Guide</a>
+      </div>
+      <div class="item">
+        <a href="LM3 Slides.pdf" target="_blank">LM3 Lecture Slides</a>
+      </div>
+      <div class="item">
+        <a href="LM3 LectureNotes.pdf" target="_blank">LM3 Lecture Notes</a>
+      </div>
+
+      <!-- LM4 -->
+      <div class="module-header">Learning Module 4</div>
+      <div class="item">
+        <a href="LM4 Guide.pdf" target="_blank">LM4 Course Guide</a>
+      </div>
+      <div class="item">
+        <a href="LM4 Slides.pdf" target="_blank">LM4 Lecture Slides</a>
+      </div>
+      <div class="item">
+        <a href="LM4 LectureNotes.pdf" target="_blank">LM4 Lecture Notes</a>
+      </div>
+
+      <!-- LM5 -->
+      <div class="module-header">Learning Module 5</div>
+      <div class="item">
+        <a href="LM5 Guide.pdf" target="_blank">LM5 Course Guide</a>
+      </div>
+      <div class="item">
+        <a href="LM5 Slides.pdf" target="_blank">LM5 Lecture Slides</a>
+      </div>
+      <div class="item">
+        <a href="LM5 LectureNotes.pdf" target="_blank">LM5 Lecture Notes</a>
+      </div>
+
+      <!-- LM6 -->
+      <div class="module-header">Learning Module 6</div>
+      <div class="item">
+        <a href="LM6 Guide.pdf" target="_blank">LM6 Course Guide</a>
+      </div>
+      <div class="item">
+        <a href="LM6 Slides.pdf" target="_blank">LM6 Lecture Slides</a>
+      </div>
+      <div class="item">
+        <a href="LM6 LectureNotes.pdf" target="_blank">LM6 Lecture Notes</a>
+      </div>
+
+      <!-- LM7 -->
+      <div class="module-header">Learning Module 7</div>
+      <div class="item">
+        <a href="LM7 Guide.pdf" target="_blank">LM7 Course Guide</a>
+      </div>
+      <div class="item">
+        <a href="LM7 Slides.pdf" target="_blank">LM7 Lecture Slides</a>
+      </div>
+      <div class="item">
+        <a href="LM7 LectureNotes.pdf" target="_blank">LM7 Lecture Notes</a>
+      </div>
+    </div>
+
+    <!-- Additional notes (plain text contents) -->
+    <div class="additional-notes">
+      <h2>Additional Notes</h2>
+      <pre class="notes-text">
+- Additional resources can be found under each LM on learn
+
+- Online Quizzes can be found on Learn
+      </pre>
+    </div>
+  </div>
+</body>
+</html>
