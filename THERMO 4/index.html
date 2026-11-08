@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thermodynamics - Course Materials</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+    header {
+      background-color: #6f57a3;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+    h1 {
+      margin: 0;
+    }
+    .content {
+      max-width: 1400px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #1e1e1e;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+    }
+
+    /* Top reference data row */
+    .top-resources {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    /* Revision section */
+    .section-title {
+      text-align: center;
+      padding: 10px;
+      background: #2a2a2a;
+      border-radius: 5px;
+      margin: 0 0 15px;
+      font-weight: bold;
+      color: #6f57a3;
+      font-size: 18px;
+    }
+
+    /* Table-like grid layout */
+    .revision-table {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .revision-row {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr;
+      gap: 15px;
+      align-items: stretch;
+    }
+
+    .topic-label {
+      background: #2a2a2a;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .column-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .item {
+      padding: 12px;
+      background: #6f57a3;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      border-left: 3px solid #6f57a3;
+      display: flex;
+      align-items: center;
+      flex: 1; /* ensures items stretch to match row height if needed */
+    }
+    .item:hover {
+      background: #383838;
+      transform: translateX(3px);
+    }
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      width: 100%;
+      display: block;
+    }
+    a:hover {
+      color: #6f57a3;
+      text-decoration: underline;
+    }
+
+    /* Additional notes section */
+    .additional-notes {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #333;
+    }
+    .additional-notes h2 {
+      color: #6f57a3;
+      margin-top: 0;
+    }
+    .notes-text {
+      background: #121212;
+      color: #e0e0e0;
+      padding: 20px;
+      border-radius: 6px;
+      border-left: 3px solid #6f57a3;
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 14px;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      overflow-x: auto;
+      margin: 0;
+    }
+
+    @media (max-width: 900px) {
+      .revision-row {
+        grid-template-columns: 1fr;
+      }
+      .topic-label {
+        padding: 10px;
+        background: #1e1e1e;
+        border-bottom: 1px solid #333;
+        justify-content: flex-start;
+      }
+    }
+    @media (max-width: 768px) {
+      .top-resources {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Thermodynamics</h1>
+    <p>Cycles again!</p>
+  </header>
+  <div class="content">
+
+    <!-- Reference data sheets -->
+    <div class="top-resources">
+      <div class="item">
+        <a href="AirData.PDF" target="_blank">Air Data</a>
+      </div>
+      <div class="item">
+        <a href="FormulaSheet.pdf" target="_blank">Formula Sheet</a>
+      </div>
+      <div class="item">
+        <a href="GasMixture.pdf" target="_blank">Gas Mixture</a>
+      </div>
+      <div class="item">
+        <a href="PsychrometricChart.pdf" target="_blank">Psychrometric Chart</a>
+      </div>
+      <div class="item">
+        <a href="r134aData.pdf" target="_blank">R134a Data</a>
+      </div>
+      <div class="item">
+        <a href="SteamTables.pdf" target="_blank">Steam Tables</a>
+      </div>
+    </div>
+
+    <!-- Revision -->
+    <div class="section-title">Revision</div>
+
+    <div class="revision-table">
+      
+      <!-- Revision Row (L0, T1, TS1) -->
+      <div class="revision-row">
+        <div class="topic-label">Thermo 2 Revision</div>
+        <div class="column-stack">
+          <div class="item"><a href="L0.pdf" target="_blank">Lecture 0</a></div>
+        </div>
+        <div class="column-stack">
+          <div class="item"><a href="T1.pdf" target="_blank">Tutorial 1</a></div>
+        </div>
+        <div class="column-stack">
+          <div class="item"><a href="TS1.pdf" target="_blank">Solutions 1</a></div>
+        </div>
+      </div>
+
+      <!-- Brayton Row (L1, T2, TS2) -->
+      <div class="revision-row">
+        <div class="topic-label">Brayton</div>
+        <div class="column-stack">
+          <div class="item"><a href="L1.pdf" target="_blank">Lecture 1</a></div>
+        </div>
+        <div class="column-stack">
+          <div class="item"><a href="T2.pdf" target="_blank">Tutorial 2</a></div>
+        </div>
+        <div class="column-stack">
+          <div class="item"><a href="TS2.pdf" target="_blank">Solutions 2</a></div>
+        </div>
+      </div>
+
+      <!-- Rankine Row (L2, T3, T4, TS3, TS4) -->
+      <div class="revision-row">
+        <div class="topic-label">Rankine</div>
+        <div class="column-stack">
+          <div class="item"><a href="L2.pdf" target="_blank">Lecture 2</a></div>
+        </div>
+        <div class="column-stack">
+          <div class="item"><a href="T3.pdf" target="_blank">Tutorial 3</a></div>
+          <div class="item"><a href="T4.pdf" target="_blank">Tutorial 4</a></div>
+        </div>
+        <div class="column-stack">
+          <div class="item"><a href="TS3.pdf" target="_blank">Soloutions 3</a></div>
+          <div class="item"><a href="TS4.pdf" target="_blank">Soloutions 4</a></div>
+        </div>
+      </div>
+
+      <!-- Ideal Mixtures Row (L3, T5, TS5) -->
+      <div class="revision-row">
+        <div class="topic-label">Ideal Mixtures</div>
+        <div class="column-stack">
+          <div class="item"><a href="L3.pdf" target="_blank">Lecture 3</a></div>
+        </div>
+        <div class="column-stack">
+          <div class="item"><a href="T5.pdf" target="_blank">Tutorial 5</a></div>
+        </div>
+        <div class="column-stack">
+          <div class="item"><a href="TS5.pdf" target="_blank">Solutions 5</a></div>
+        </div>
+      </div>
+
+      <!-- Exergy Row (L4, T6, T7, TS6, TS7) -->
+      <div class="revision-row">
+        <div class="topic-label">Exergy</div>
+        <div class="column-stack">
+          <div class="item"><a href="L4.pdf" target="_blank">Lecture 4</a></div>
+        </div>
+        <div class="column-stack">
+          <div class="item"><a href="T6.pdf" target="_blank">Tutorial 6</a></div>
+          <div class="item"><a href="T7.pdf" target="_blank">Tutorial 7</a></div>
+        </div>
+        <div class="column-stack">
+          <div class="item"><a href="TS6.pdf" target="_blank">Solutions 6</a></div>
+          <div class="item"><a href="TS7.pdf" target="_blank">Solutions 7</a></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Additional notes -->
+    <div class="additional-notes">
+      <h2>Additional Notes</h2>
+      <pre class="notes-text">
+- Double sided cheat sheet allowed
+      </pre>
+    </div>
+
+  </div>
+</body>
+</html>
