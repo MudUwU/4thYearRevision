@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fluids - Course Materials</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+    header {
+      background-color: #6f57a3;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+    h1 {
+      margin: 0;
+    }
+    .content {
+      max-width: 1400px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #1e1e1e;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+    }
+
+    /* Top formula sheet row */
+    .top-resources {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    /* Two-column layout: lectures | tutorials */
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: start;
+    }
+
+    .column-title {
+      text-align: center;
+      padding: 10px;
+      background: #2a2a2a;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .item {
+      padding: 12px;
+      background: #6f57a3;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      border-left: 3px solid #6f57a3;
+      margin-bottom: 10px;
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+    }
+    .item:hover {
+      background: #383838;
+      transform: translateX(3px);
+    }
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      width: 100%;
+      display: block;
+    }
+    a:hover {
+      color: #6f57a3;
+      text-decoration: underline;
+    }
+
+    /* Nested rows (e.g. Week 1: L1 + L2 side by side) */
+    .row-pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    /* Additional notes section */
+    .additional-notes {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #333;
+    }
+    .additional-notes h2 {
+      color: #6f57a3;
+      margin-top: 0;
+    }
+    .notes-text {
+      background: #121212;
+      color: #e0e0e0;
+      padding: 20px;
+      border-radius: 6px;
+      border-left: 3px solid #6f57a3;
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 14px;
+      line-height: 1.5;
+      white-space: pre-wrap;   /* preserves line breaks and wraps long lines */
+      word-wrap: break-word;
+      overflow-x: auto;
+      margin: 0;
+    }
+
+    @media (max-width: 1200px) {
+      .two-column {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 768px) {
+      .row-pair {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fluids</h1>
+    <p>Lectures, tutorials and formula sheet</p>
+  </header>
+  <div class="content">
+
+    <!-- Formula sheet -->
+    <div class="top-resources">
+      <div class="item">
+        <a href="FormulaSheet.pdf" target="_blank">Formula Sheet</a>
+      </div>
+    </div>
+
+    <!-- Two column layout -->
+    <div class="two-column">
+
+      <!-- Left: lectures, two per week -->
+      <div>
+        <div class="column-title">Lectures</div>
+
+        <!-- Week 1 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="L1.pdf" target="_blank">Lecture 1</a>
+          </div>
+          <div class="item">
+            <a href="L2.pdf" target="_blank">Lecture 2</a>
+          </div>
+        </div>
+
+        <!-- Week 2 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="L3.pdf" target="_blank">Lecture 3</a>
+          </div>
+          <div class="item">
+            <a href="L4.pdf" target="_blank">Lecture 4</a>
+          </div>
+        </div>
+
+        <!-- Week 3 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="L5.pdf" target="_blank">Lecture 5</a>
+          </div>
+          <div class="item">
+            <a href="L6.pdf" target="_blank">Lecture 6</a>
+          </div>
+        </div>
+
+        <!-- Week 4 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="L7.pdf" target="_blank">Lecture 7</a>
+          </div>
+          <div class="item">
+            <a href="L8.pdf" target="_blank">Lecture 8</a>
+          </div>
+        </div>
+
+        <!-- Week 5 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="L9.pdf" target="_blank">Lecture 9</a>
+          </div>
+          <div class="item">
+            <a href="L10.pdf" target="_blank">Lecture 10</a>
+          </div>
+        </div>
+
+        <!-- Week 6 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="L11.pdf" target="_blank">Lecture 11</a>
+          </div>
+          <div class="item">
+            <a href="L12.pdf" target="_blank">Lecture 12</a>
+          </div>
+        </div>
+
+        <!-- Week 7 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="L13.pdf" target="_blank">Lecture 13</a>
+          </div>
+          <div class="item">
+            <a href="L14.pdf" target="_blank">Lecture 14</a>
+          </div>
+        </div>
+
+        <!-- Week 8 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="L15.pdf" target="_blank">Lecture 15</a>
+          </div>
+          <div class="item">
+            <a href="L16.pdf" target="_blank">Lecture 16</a>
+          </div>
+        </div>
+
+        <!-- Week 9 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="L17.pdf" target="_blank">Lecture 17</a>
+          </div>
+          <div class="item">
+            <a href="L18.pdf" target="_blank">Lecture 18</a>
+          </div>
+        </div>
+
+        <!-- Week 10 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="L19.pdf" target="_blank">Lecture 19</a>
+          </div>
+          <div class="item">
+            <a href="L20.pdf" target="_blank">Lecture 20</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: tutorials + solutions -->
+      <div>
+        <div class="column-title">Tutorials &amp; Solutions</div>
+
+        <!-- Tutorial 1 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="T1.pdf" target="_blank">Tutorial 1</a>
+          </div>
+          <div class="item">
+            <a href="TS1.pdf" target="_blank">Tutorial 1 Solutions</a>
+          </div>
+        </div>
+
+        <!-- Tutorial 2 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="T2.pdf" target="_blank">Tutorial 2</a>
+          </div>
+          <div class="item">
+            <a href="TS2.pdf" target="_blank">Tutorial 2 Solutions</a>
+          </div>
+        </div>
+
+        <!-- Tutorial 3 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="T3.pdf" target="_blank">Tutorial 3</a>
+          </div>
+          <div class="item">
+            <a href="TS3.pdf" target="_blank">Tutorial 3 Solutions</a>
+          </div>
+        </div>
+
+        <!-- Tutorial 4 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="T4.pdf" target="_blank">Tutorial 4</a>
+          </div>
+          <div class="item">
+            <a href="TS4.pdf" target="_blank">Tutorial 4 Solutions</a>
+          </div>
+        </div>
+
+        <!-- Tutorial 5 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="T5.pdf" target="_blank">Tutorial 5</a>
+          </div>
+          <div class="item">
+            <a href="TS5.pdf" target="_blank">Tutorial 5 Solutions</a>
+          </div>
+        </div>
+
+        <!-- Tutorial 6 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="T6.pdf" target="_blank">Tutorial 6</a>
+          </div>
+          <div class="item">
+            <a href="TS6.pdf" target="_blank">Tutorial 6 Solutions</a>
+          </div>
+        </div>
+
+        <!-- Tutorial 7 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="T7.pdf" target="_blank">Tutorial 7</a>
+          </div>
+          <div class="item">
+            <a href="TS7.pdf" target="_blank">Tutorial 7 Solutions</a>
+          </div>
+        </div>
+
+        <!-- Tutorial 8 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="T8.pdf" target="_blank">Tutorial 8</a>
+          </div>
+          <div class="item">
+            <a href="TS8.pdf" target="_blank">Tutorial 8 Solutions</a>
+          </div>
+        </div>
+
+        <!-- Tutorial 9 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="T9.pdf" target="_blank">Tutorial 9</a>
+          </div>
+          <div class="item">
+            <a href="TS9.pdf" target="_blank">Tutorial 9 Solutions</a>
+          </div>
+        </div>
+
+        <!-- Tutorial 10 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="T10.pdf" target="_blank">Tutorial 10</a>
+          </div>
+          <div class="item">
+            <a href="TS10.pdf" target="_blank">Tutorial 10 Solutions</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Additional notes (plain text contents) -->
+    <div class="additional-notes">
+      <h2>Additional Notes</h2>
+      <pre class="notes-text">
+- No cheat sheet
+      </pre>
+    </div>
+
+  </div>
+</body>
+</html>

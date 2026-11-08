@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Management - Course Materials</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+    header {
+      background-color: #6f57a3;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+    h1 {
+      margin: 0;
+    }
+    .content {
+      max-width: 1400px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #1e1e1e;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+    }
+
+    /* Top course notes row */
+    .top-resources {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    /* Two-column layout: lectures | exams */
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: start;
+    }
+
+    .column-title {
+      text-align: center;
+      padding: 10px;
+      background: #2a2a2a;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .item {
+      padding: 12px;
+      background: #6f57a3;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      border-left: 3px solid #6f57a3;
+      margin-bottom: 10px;
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+    }
+    .item:hover {
+      background: #383838;
+      transform: translateX(3px);
+    }
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      width: 100%;
+      display: block;
+    }
+    a:hover {
+      color: #6f57a3;
+      text-decoration: underline;
+    }
+
+    /* Nested rows inside each column (e.g. Topic 1 L1 + L2 side by side) */
+    .row-pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    /* Additional notes section */
+    .additional-notes {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #333;
+    }
+    .additional-notes h2 {
+      color: #6f57a3;
+      margin-top: 0;
+    }
+    .notes-text {
+      background: #121212;
+      color: #e0e0e0;
+      padding: 20px;
+      border-radius: 6px;
+      border-left: 3px solid #6f57a3;
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 14px;
+      line-height: 1.5;
+      white-space: pre-wrap;   /* preserves line breaks and wraps long lines */
+      word-wrap: break-word;
+      overflow-x: auto;
+      margin: 0;
+    }
+
+    @media (max-width: 1200px) {
+      .two-column {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 768px) {
+      .top-resources {
+        grid-template-columns: 1fr;
+      }
+      .row-pair {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Project Management</h1>
+    <p>made up course</p>
+  </header>
+  <div class="content">
+
+    <!-- Course notes -->
+    <div class="top-resources">
+      <div class="item">
+        <a href="COURSE NOTES.pdf" target="_blank">Course Notes</a>
+      </div>
+      <div class="item">
+        <a href="COURSE NOTES CUT.pdf" target="_blank">Course Notes (Cut)</a>
+      </div>
+    </div>
+
+    <!-- Two column layout -->
+    <div class="two-column">
+
+      <!-- Left: lecture notes by topic -->
+      <div>
+        <div class="column-title">Lecture Notes</div>
+
+        <!-- Topic 1 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="T1 L1.pdf" target="_blank">Topic 1 Lecture 1</a>
+          </div>
+          <div class="item">
+            <a href="T1 L2.pdf" target="_blank">Topic 1 Lecture 2</a>
+          </div>
+        </div>
+
+        <!-- Topic 3 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="T3 L1.pdf" target="_blank">Topic 3 Lecture 1</a>
+          </div>
+          <div class="item">
+            <a href="T3 L2.pdf" target="_blank">Topic 3 Lecture 2</a>
+          </div>
+        </div>
+
+        <!-- Topic 4 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="T4 L1.pdf" target="_blank">Topic 4 Lecture 1</a>
+          </div>
+          <div class="item">
+            <a href="T4 L2.pdf" target="_blank">Topic 4 Lecture 2</a>
+          </div>
+        </div>
+
+        <!-- Topic 5 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="T5 L1.pdf" target="_blank">Topic 5 Lecture 1</a>
+          </div>
+          <div class="item">
+            <a href="T5 L2.pdf" target="_blank">Topic 5 Lecture 2</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: exams and marking guides -->
+      <div>
+        <div class="column-title">Exams &amp; Marking Guides</div>
+
+        <!-- 2023 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="E23.pdf" target="_blank">Exam 2023</a>
+          </div>
+          <div class="item">
+            <a href="EMG23.pdf" target="_blank">Marking Guide 2023</a>
+          </div>
+        </div>
+
+        <!-- 2021 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="E21.pdf" target="_blank">Exam 2021</a>
+          </div>
+          <div class="item">
+            <a href="EMG21.pdf" target="_blank">Marking Guide 2021</a>
+          </div>
+        </div>
+
+        <!-- 2019 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="E19.pdf" target="_blank">Exam 2019</a>
+          </div>
+          <div class="item">
+            <a href="EMG19.pdf" target="_blank">Marking Guide 2019</a>
+          </div>
+        </div>
+
+        <!-- 2017 -->
+        <div class="row-pair">
+          <div class="item">
+            <a href="E17.pdf" target="_blank">Exam 2017</a>
+          </div>
+          <div class="item">
+            <a href="EMG17.pdf" target="_blank">Marking Guide 2017</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Additional notes (plain text contents) -->
+    <div class="additional-notes">
+      <h2>Additional Notes</h2>
+      <pre class="notes-text">
+- Only Topics 1, 3, 4 & 5 are examinable
+
+- Ignore Project Planning andProgramming/Scheduling & Monitoring and Control
+
+- Exams 2023, 2021 & 2019 Q1 not Examinable, 2017 Q2 & Q3a
+      </pre>
+    </div>
+  </div>
+</body>
+</html>
