@@ -34,24 +34,31 @@
       gap: 15px;
     }
     .course-box {
+      display: block;
       padding: 15px;
       background: #2a2a2a;
       border-radius: 5px;
       transition: background-color 0.3s;
       box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      text-decoration: none;
+      color: inherit;
     }
     .course-box:hover {
       background-color: #555;
     }
-    a {
-      text-decoration: none;
+    .course-title {
       color: #6f57a3;
       font-weight: bold;
       font-size: 18px;
       display: block;
+      transition: color 0.3s;
     }
-    a:hover {
+    .course-box:hover .course-title {
       color: #0056b3;
+    }
+    .course-box p {
+      margin: 8px 0 0;
+      color: #ddd;
     }
     footer {
       text-align: center;
@@ -68,23 +75,22 @@
   </header>
   <div class="content">
     <section>
-      <div class="course-box">
-        <a href="dynamics/index.html">Dynamics</a>
+      <a href="dynamics/index.html" class="course-box">
+        <span class="course-title">Dynamics</span>
         <p>car go broom broom.</p>
-      </div>
-      <div class="course-box">
-        <a href="thermodynamics/index.html">thermo</a>
-        <p>hot.</p>
-      </div>
-      <div class="course-box">
-        <a href="fluids/index.html">Fluids</a>
-        <p>wet.</p>
-      </div>
-      <div class="course-box">
-        <a href="ProjectMan/index.html">Project Managment</a>
+      </a>
+      <a href="proman/index.html" class="course-box">
+        <span class="course-title">Project Management</span>
         <p>bollocks.</p>
-
-
+      </a>
+      <a href="fluids/index.html" class="course-box">
+        <span class="course-title">Fluids</span>
+        <p>wet.</p>
+      </a>
+      <a href="ProjectMan/index.html" class="course-box">
+        <span class="course-title">Thermo</span>
+        <p>hot.</p>
+      </a>
     </section>
   </div>
 </body>
